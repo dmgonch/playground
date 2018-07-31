@@ -1,0 +1,191 @@
+# Source Depot Client Artifact
+sd.ini
+sdb.ini
+
+stderr.txt
+
+# Visual Studio Garbage
+*.sln
+*.user
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.sln.ide/
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.lib
+*.sbr
+*.pidb
+*.userprefs
+*.swp
+*.sdf
+*.opensdf
+*.psess
+*.vsp
+*.vspx
+*.VC.opendb
+*.dbmdl
+*.VC.db
+*.userosscache
+
+# Visual Studio 2015 cache/options directory
+.vs/
+sln/
+
+# vsmsbuild would generate dirs.sln, projhash* and slnhash*
+*.projhash*
+*.slnhash*
+dirs.sdf
+
+# build output directories
+[Oo]bjd/
+[Oo]bj/
+target/
+[Bb]in/
+build_logs/
+Logs/
+OACRTemp/
+FilesFromCache/
+LocalFileTempCache/
+__tracer/
+VersionGeneration/
+VersionGeneratingLogs/
+FakesAssemblies/
+
+# build logs
+build*.log
+build*.err
+build*.wrn
+build*.dbb
+build*.prf
+build*.evt
+build*.trc
+build*.trc.txt
+build*.rec
+msbuild.log
+CacheDownloader.*.log
+tracker.*.log
+tracker_fileAccesses
+
+#QuickBuild
+QLocal/
+QLogs/
+QSandbox/
+QTestLogs/
+__cbcOutput/
+__cacheOutput/
+QuickBuild.log
+QLocalCache.log
+BuildSessionInfo.json
+binplace.log
+SyncCommand*.trc.txt
+SyncCommand*.trc
+telemetry.log
+
+# corext v4 stuff
+.corext/gen/
+build/environment/
+tools/path1st/sd.cmd
+public/lock
+data/versions.xml
+tmp/cache
+
+# corext versioning generated on build
+public/inc/bldver.*
+!public/inc/bldver.rc
+!public/inc/bldver.hf
+public/inc/sources.ver
+version/versions.xml
+
+# ignore thumbnails created by windows
+Thumbs.db
+
+# Testing Artifacts
+[Tt]est[Rr]esults/
+pingme.txt
+
+# CloudStore cache
+private/CloudBuild/Cache/Nuget/*.nupkg
+private/CloudBuild/Cache/Nuget/*.log
+private/CloudBuild/Cache/Nuget/root
+
+# VstsAgent nuget package
+private/Tools/VstsAgentDeployment/nuget/content/*
+private/Tools/VstsAgentDeployment/nuget/*.nupkg
+!private/Tools/VstsAgentDeployment/nuget/content/readme.md
+
+# Exemptions
+![Tt]est[Rr]esult*\.cs
+!TestResultStore/
+!TestResultStats/
+!private/Misc/SDObjectModel/src/sdapi/Bin
+!Enterprise.bak
+!Preference.bak
+!private/services/pipeline/workflow.tests/Notification/*.log
+!private/DevTools/dbs/BuilderManager/bin/
+!private/Services/Pipeline/Build.Tests/TestData/*
+!private/BuildEngine/Enlistment.Library/Tests/MSBuild/TestsData/sln/**
+!private/VSTS/VstsTargetTab/src/.vscode/settings.json
+!*.bond
+
+# VIM backup files
+*~
+
+# Git artifacts
+*.orig
+
+# NCrunch temp directory
+_NCrunch*/
+*.ncrunchproject
+*.ncrunchsolution
+
+# We will generate this on demand
+*.v2.ncrunchsolution
+*.v2.ncrunchproject
+
+# Visual Studio Code
+.settings
+.vscode/
+UpgradeLog.htm
+
+# NPM package folder
+node_modules/
+npm-debug.log
+
+# Ignores compiled TypeScript files
+private/VSTS/VstsTargetTab/src/src/**/*.js
+private/VSTS/VstsTargetTab/src/lib/**/*.js
+private/VSTS/VstsTargetTab/src/dist/*
+private/Services/Batmon/WebControls/Typescript/Contract/BuildSummary.js
+
+# Dump files created when git crashes
+*.exe.stackdump
+
+# This ignores files derived from "dirs.proj", like "BuildClient_dirs.proj". This is useful when you have multiple instances of VS open: instead of all of them being called "dirs.proj", now you will be able to distinguish between them. kojamroz has a script that automatically creates <current_dir_name>_dirs.proj and opens it. Just let him know if you want to use it.
+*_dirs.proj
+
+#ignore envkeep.txt
+build/envkeep.txt
+#emacs temp files
+\#*\#
+.\#*
+
+#nuget download log on enlistment init
+nuget.log
+
+# PackageReference generated files
+project.assets.json
+*.nuget.g.props
+*.nuget.g.targets
+
+# Domino Combined Engine local build cache and other auxiliary artifacts
+Out/
+
+# Domino Combined Engine generated version proj
+qversiongen/
